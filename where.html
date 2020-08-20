@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>WHERE?</title>
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body class="grid">
+  <div class="col col3 row3">
+    <h2>Where can I recycle?</h2>
+    <p>Provided by the DSNY (Department of Sanitation), here, all of the recycling cans in a bourough in New York City. At these locations, you could help the environment by recycling items that might have otherwise be put in the trash.</p>
+    <select id="choose_borough">
+      <option value="Manhattan">Manhattan</option>
+      <option value="Brooklyn">Brooklyn</option>
+      <option value="Bronx">Bronx</option>
+      <option value="Queens">Queens</option>
+      <option value="Staten Island">Staten Island</option>
+    </select>
+    <button type="button" onclick="loadFile();">ENTER</button>
+    <br><br>
+    <canvas id="cityImage" width="250" height="250"></canvas>
+  </div>
+<script src="js/main.js"></script>
+<script src="js/locations.js"></script>
+<script src="js/make_svg.js"></script>
+</body>
+</html>

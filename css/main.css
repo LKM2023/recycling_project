@@ -1,0 +1,173 @@
+body {
+     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+     font-weight: lighter;
+     margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+     font-weight: lighter;
+}
+
+.header {
+     grid-column-start: 1;
+     grid-column-end: 4;
+     grid-row-start: 2;
+     grid-row-end: 3;
+     text-align: center;
+
+}
+
+.grid {
+     display: grid;
+     grid-template-columns: 1fr 1fr 1fr;
+     grid-template-rows: auto auto auto;
+     grid-column-gap: 5px;
+}
+
+.navbar {
+     background-color: rgb(87, 224, 96);
+     margin: 0;
+     grid-column-start: 1;
+     grid-column-end: 4;
+     grid-row-start: 1;
+     grid-row-end: 2;
+}
+
+.navbar>ul {
+     list-style-type: none;
+     margin: 0;
+     padding: 0;
+     overflow: hidden;
+}
+
+.navbar>ul>li {
+     float: left;
+}
+
+.navbar>ul>li a  {
+     display: block;
+     padding: 7px;
+     text-decoration: none;
+     color: white;
+}
+
+.navbar>ul>li a:hover {
+     color: black;
+}
+
+.col {
+     padding: 3px;
+}
+
+.col1 {
+     grid-column-start: 1;
+     grid-column-end: 2;
+}
+
+.col2 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+.col3 {
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+
+.row3 {
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+.row4 {
+    grid-row-start: 4;
+    grid-row-end: 5;
+}
+
+.col23 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.col34 {
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+
+.citation {
+    border: 1px solid black;
+    border-radius: 3px;
+    margin: 3px;
+}
+
+.largeImg {
+    width: 100%;
+}
+
+.row34 {
+    grid-row-start: 3;
+    grid-row-end: 5;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid black;
+    padding: 3px;
+
+}
+
+th {
+   font-weight: normal;
+   color: green;
+}
+
+.scroll {
+    padding: 3px;
+    height: 500px;
+    overflow: scroll;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+.slide_left {
+    animation-name: slide_left;
+    animation-duration: 5s;
+}
+
+@keyframes slide_left {
+    0% {margin-left: -90px;};
+    100% {margin-left: 0px;};
+}
+
+#how_recycle {
+     display: grid;
+     grid-template-columns: 1fr 1fr 1fr;
+     grid-template-rows: auto auto auto;
+     grid-column-gap: 5px;
+}
+
+.howItem {
+    border: none;
+    margin-top: 0;
+    margin-bottom: 0;
+    height: 1fr;
+    width: 1fr;
+    overflow: scroll;
+}
+
+.list {
+    padding: 10px;
+    border: 1px black solid;
+}
+
+.list>ul {
+    list-style-type: square;
+}
+
+iframe {
+    width: 100%;
+    height: 500px;
+}
